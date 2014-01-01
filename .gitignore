@@ -8,6 +8,10 @@ Thumbs.db
 # Build dir
 build/
 *.build/
+
+# Temp dir
+tmp/
+temp/
  
 # Xcode project files except for the project file
 *.xcodeproj/*
