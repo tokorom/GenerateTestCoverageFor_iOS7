@@ -24,6 +24,8 @@
 		06F7A7301873DA6300734089 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A72F1873DA6300734089 /* SampleTests.m */; };
 		06F7A73B1873F91200734089 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A73A1873F91200734089 /* Sample.m */; };
 		06F7A73C1873F91700734089 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A73A1873F91200734089 /* Sample.m */; };
+		06F7A7421873FB0100734089 /* TKRGcovFluserTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A73F1873FB0100734089 /* TKRGcovFluserTestObserver.m */; };
+		06F7A7431873FB0100734089 /* TKRGcovFlusher.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A7411873FB0100734089 /* TKRGcovFlusher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		06F7A72F1873DA6300734089 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
 		06F7A7391873F91200734089 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
 		06F7A73A1873F91200734089 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
+		06F7A73E1873FB0100734089 /* TKRGcovFluserTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRGcovFluserTestObserver.h; sourceTree = "<group>"; };
+		06F7A73F1873FB0100734089 /* TKRGcovFluserTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRGcovFluserTestObserver.m; sourceTree = "<group>"; };
+		06F7A7401873FB0100734089 /* TKRGcovFlusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRGcovFlusher.h; sourceTree = "<group>"; };
+		06F7A7411873FB0100734089 /* TKRGcovFlusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRGcovFlusher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		06F7A6F51873DA6300734089 = {
 			isa = PBXGroup;
 			children = (
+				06F7A73D1873FB0100734089 /* GenerateTestCoverageFor_iOS7 */,
 				06F7A7071873DA6300734089 /* App */,
 				06F7A7291873DA6300734089 /* Tests */,
 				06F7A7001873DA6300734089 /* Frameworks */,
@@ -159,6 +166,17 @@
 				06F7A72C1873DA6300734089 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06F7A73D1873FB0100734089 /* GenerateTestCoverageFor_iOS7 */ = {
+			isa = PBXGroup;
+			children = (
+				06F7A73E1873FB0100734089 /* TKRGcovFluserTestObserver.h */,
+				06F7A73F1873FB0100734089 /* TKRGcovFluserTestObserver.m */,
+				06F7A7401873FB0100734089 /* TKRGcovFlusher.h */,
+				06F7A7411873FB0100734089 /* TKRGcovFlusher.m */,
+			);
+			path = GenerateTestCoverageFor_iOS7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F7A7431873FB0100734089 /* TKRGcovFlusher.m in Sources */,
+				06F7A7421873FB0100734089 /* TKRGcovFluserTestObserver.m in Sources */,
 				06F7A7301873DA6300734089 /* SampleTests.m in Sources */,
 				06F7A73C1873F91700734089 /* Sample.m in Sources */,
 			);
