@@ -21,7 +21,9 @@
 		06F7A7251873DA6300734089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F7A7011873DA6300734089 /* Foundation.framework */; };
 		06F7A7261873DA6300734089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F7A7051873DA6300734089 /* UIKit.framework */; };
 		06F7A72E1873DA6300734089 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06F7A72C1873DA6300734089 /* InfoPlist.strings */; };
-		06F7A7301873DA6300734089 /* GenerateTestCoverageFor_iOS7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A72F1873DA6300734089 /* GenerateTestCoverageFor_iOS7Tests.m */; };
+		06F7A7301873DA6300734089 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A72F1873DA6300734089 /* SampleTests.m */; };
+		06F7A73B1873F91200734089 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A73A1873F91200734089 /* Sample.m */; };
+		06F7A73C1873F91700734089 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7A73A1873F91200734089 /* Sample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		06F7A7231873DA6300734089 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		06F7A72B1873DA6300734089 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		06F7A72D1873DA6300734089 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		06F7A72F1873DA6300734089 /* GenerateTestCoverageFor_iOS7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateTestCoverageFor_iOS7Tests.m; sourceTree = "<group>"; };
+		06F7A72F1873DA6300734089 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
+		06F7A7391873F91200734089 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		06F7A73A1873F91200734089 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 		06F7A7071873DA6300734089 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				06F7A7391873F91200734089 /* Sample.h */,
+				06F7A73A1873F91200734089 /* Sample.m */,
 				06F7A7101873DA6300734089 /* AppDelegate.h */,
 				06F7A7111873DA6300734089 /* AppDelegate.m */,
 				06F7A7131873DA6300734089 /* Main_iPhone.storyboard */,
@@ -140,7 +146,7 @@
 		06F7A7291873DA6300734089 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				06F7A72F1873DA6300734089 /* GenerateTestCoverageFor_iOS7Tests.m */,
+				06F7A72F1873DA6300734089 /* SampleTests.m */,
 				06F7A72A1873DA6300734089 /* Supporting Files */,
 			);
 			path = Tests;
@@ -254,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F7A71B1873DA6300734089 /* ViewController.m in Sources */,
+				06F7A73B1873F91200734089 /* Sample.m in Sources */,
 				06F7A7121873DA6300734089 /* AppDelegate.m in Sources */,
 				06F7A70E1873DA6300734089 /* main.m in Sources */,
 			);
@@ -263,7 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F7A7301873DA6300734089 /* GenerateTestCoverageFor_iOS7Tests.m in Sources */,
+				06F7A7301873DA6300734089 /* SampleTests.m in Sources */,
+				06F7A73C1873F91700734089 /* Sample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
