@@ -23,7 +23,6 @@ coverstory:
 	/Applications/CoverStory.app/Contents/MacOS/CoverStory $(OBJDIR)
 
 coveralls:
-	make test-with-coverage
 	coveralls \
 		--exclude App \
 		--exclude Tests \

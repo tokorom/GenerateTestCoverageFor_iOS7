@@ -1,4 +1,4 @@
-GenerateTestCoverageFor_iOS7 [![build](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7.png?branch=master)](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7)
+GenerateTestCoverageFor_iOS7 [![build](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7.png?branch=master)](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7) [![coverage](https://coveralls.io/repos/tokorom/GenerateTestCoverageFor_iOS7/badge.png)](https://coveralls.io/r/tokorom/GenerateTestCoverageFor_iOS7)
 ============================
 
 Support to get the test coverage in iOS7.
