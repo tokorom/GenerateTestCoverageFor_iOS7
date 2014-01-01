@@ -27,7 +27,10 @@
 - (void)stopObserving
 {
     [super stopObserving];
-    [[UIApplication sharedApplication] gcovFlush];
+    UIApplication *application = [UIApplication sharedApplication];
+    if ([application respondsToSelector:@selector(gcovFlush)]) {
+        [application gcovFlush];
+    }
 }
 
 //----------------------------------------------------------------------------//
@@ -36,11 +39,13 @@
 
 + (void)addGcovFlushMethodToApplication
 {
+#if defined(USE_GCOV_FLUSH) || !defined(UNUSE_GCOV_FLUSH)
     IMP imp = imp_implementationWithBlock(^{
         extern void __gcov_flush(void);
         __gcov_flush();
     });
     class_addMethod([UIApplication class], @selector(gcovFlush), imp, "v@:");
+#endif
 }
 
 @end
