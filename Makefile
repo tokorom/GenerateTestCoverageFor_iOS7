@@ -16,7 +16,7 @@ test:
 		-destination $(DESTINATION)
 
 test-with-coverage:
-	xcodebuild test \
+	xcodebuild clean test \
 		-configuration Debug \
 		-sdk iphonesimulator \
 		-scheme $(SCHEME) \
