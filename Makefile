@@ -3,15 +3,22 @@ DESTINATION = "name=iPhone Retina (4-inch 64-bit),OS=7.0"
 OBJDIR = "tmp"
 
 clean:
-	xcodebuild clean
+	xcodebuild clean \
+		-configuration Debug \
+		-sdk iphonesimulator \
+		-destination $(DESTINATION)
 
 test:
 	xcodebuild test \
+		-configuration Debug \
+		-sdk iphonesimulator \
 		-scheme $(SCHEME) \
 		-destination $(DESTINATION)
 
 test-with-coverage:
 	xcodebuild test \
+		-configuration Debug \
+		-sdk iphonesimulator \
 		-scheme $(SCHEME) \
 		-destination $(DESTINATION) \
 		OBJROOT=$(OBJDIR) \
