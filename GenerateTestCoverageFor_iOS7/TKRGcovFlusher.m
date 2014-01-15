@@ -36,7 +36,6 @@
     }
     NSString *observerNamesString = [observerNames componentsJoinedByString:@","];
     [defaults setObject:observerNamesString forKey:XCTestObserverClassKey];
-    [defaults setObject:@"XCTestLog,TKRGcovFluserTestObserver" forKey:XCTestObserverClassKey];
     [defaults synchronize];
 }
 

@@ -34,6 +34,13 @@
     currentObservers = [currentObserverString componentsSeparatedByString:@","];
 
     XCTAssertEqual(currentObservers.count, beforeCount);
+
+    beforeCount = currentObservers.count;
+    [TKRGcovFlusher updateTestObserverClassName:@"XXXObserver"];
+    currentObserverString = [defaults stringForKey:XCTestObserverClassKey];
+    currentObservers = [currentObserverString componentsSeparatedByString:@","];
+
+    XCTAssertEqual(currentObservers.count, beforeCount + 1);
 }
 
 @end
