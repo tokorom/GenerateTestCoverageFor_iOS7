@@ -1,6 +1,6 @@
 SCHEME = Tests
 DESTINATION = "name=iPhone Retina (4-inch 64-bit),OS=7.0"
-OBJDIR = "tmp"
+OBJDIR = "build"
 
 clean:
 	xcodebuild clean \
@@ -27,7 +27,6 @@ test-with-coverage:
 		OTHER_CFLAGS="-DUSE_GCOV_FLUSH"
 
 coverstory:
-	make test-with-coverage
 	/Applications/CoverStory.app/Contents/MacOS/CoverStory $(OBJDIR) &
 
 coveralls:
