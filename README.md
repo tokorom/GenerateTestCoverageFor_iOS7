@@ -1,4 +1,4 @@
-GenerateTestCoverageFor_iOS7 [![build](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7.png?branch=master)](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7) [![coverage](https://coveralls.io/repos/tokorom/GenerateTestCoverageFor_iOS7/badge.png)](https://coveralls.io/r/tokorom/GenerateTestCoverageFor_iOS7)
+GenerateTestCoverageFor_iOS7 [![build](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7.png?branch=master)](https://travis-ci.org/tokorom/GenerateTestCoverageFor_iOS7) [![coverage](https://coveralls.io/repos/tokorom/GenerateTestCoverageFor_iOS7/badge.png?20140413)](https://coveralls.io/r/tokorom/GenerateTestCoverageFor_iOS7)
 ============================
 
 Support to get the test coverage in iOS7.
@@ -21,7 +21,8 @@ xcodebuild test \
     -scheme Tests \
     -destination "name=iPhone Retina (4-inch 64-bit),OS=7.0" \
     GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
-    GCC_GENERATE_TEST_COVERAGE_FILES=YES
+    GCC_GENERATE_TEST_COVERAGE_FILES=YES \
+    OTHER_CFLAGS="-DUSE_GCOV_FLUSH"
 ```
 
 ### Send to [Coverstory](http://code.google.com/p/coverstory/)
@@ -32,7 +33,8 @@ xcodebuild test \
     -destination "name=iPhone Retina (4-inch 64-bit),OS=7.0" \
     OBJROOT=tmp \
     GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
-    GCC_GENERATE_TEST_COVERAGE_FILES=YES
+    GCC_GENERATE_TEST_COVERAGE_FILES=YES \
+    OTHER_CFLAGS="-DUSE_GCOV_FLUSH"
 
 /Applications/CoverStory.app/Contents/MacOS/CoverStory tmp
 ```
