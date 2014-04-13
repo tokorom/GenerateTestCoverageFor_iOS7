@@ -29,7 +29,9 @@
     NSArray *currentObservers = [currentObserverString componentsSeparatedByString:@","];
 
     NSArray *observerNames;
-    if ([currentObservers containsObject:className]) {
+    if (!currentObservers) {
+        observerNames = @[className];
+    } else if ([currentObservers containsObject:className]) {
         observerNames = currentObservers;
     } else {
         observerNames = [currentObservers arrayByAddingObject:className];
