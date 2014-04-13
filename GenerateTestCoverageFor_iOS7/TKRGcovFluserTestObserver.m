@@ -30,6 +30,11 @@
     UIApplication *application = [UIApplication sharedApplication];
     if ([application respondsToSelector:@selector(gcovFlush)]) {
         [application gcovFlush];
+    } else {
+#if defined(USE_GCOV_FLUSH) || !defined(UNUSE_GCOV_FLUSH)
+        extern void __gcov_flush(void);
+        __gcov_flush();
+#endif
     }
 }
 
